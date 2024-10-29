@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components</title>
+    <style>
+        .testimonial {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial img {
+            border-radius: 1%;
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+        }
+
+        .testimonial .content {
+            flex: 1;
+        }
+
+        .testimonial .quote {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .testimonial .author {
+            font-weight: bold;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .testimonial .company {
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .testimonial {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .testimonial img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="testimonial">
+        <img src="images/support@2x.jpg" alt="Client Image">
+        <div class="content">
+            <p class="quote">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, adipisci!”</p>
+            <p class="author">John Smith</p>
+            <p class="company">ABC Company</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

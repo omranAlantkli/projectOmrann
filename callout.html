@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* callout styling */
+    .callout {
+        background-color: #3388ff;
+        color: white;
+        padding: 20px 40px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .callout h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .callout p {
+        font-size: 16px;
+        margin: 5px 0 0;
+    }
+
+    .callout .cta-button {
+        background-color: #00cfff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 25px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .callout .cta-button:hover {
+        background-color: #00b3e6;
+    }
+
+    @media (max-width: 600px) {
+        .callout {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .callout .cta-button {
+            margin-top: 10px;
+        }
+    }
+</style>
+
+<body>
+
+
+    <div class="callout">
+        <div class="text">
+            <h2>Ready to Get Started?</h2>
+            <p>Choose the internet provider that makes it easy to get started, delivers fast speeds, and supports your
+                growth! Enjoy!</p>
+        </div>
+        <a href="#" class="cta-button">GET STARTED</a>
+    </div>
+
+</body>
+
+</html>

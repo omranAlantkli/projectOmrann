@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* collapsible styling */
+    .collapsible-container {
+        max-width: 800px;
+        margin: 20px auto;
+    }
+    .collapsible {
+        background-color: #333;
+        color: #fff;
+        padding: 15px;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+        position: relative;
+    }
+    .collapsible:after {
+        content: '\25BC';
+        font-size: 12px;
+        position: absolute;
+        right: 20px;
+        transition: transform 0.3s;
+    }
+    .collapsible.collapsible--expanded:after {
+        transform: rotate(180deg);
+    }
+    .collapsible-content {
+        padding: 0 15px;
+        display: none;
+        background-color: #444;
+        color: #aaa;
+        font-size: 16px;
+    }
+</style>
+<body>
+
+    
+    <div class="collapsible-container">
+        <button class="collapsible">Company</button>
+        <div class="collapsible-content">
+            <p>About Us, Team, Careers</p>
+        </div>
+        <button class="collapsible">Support</button>
+        <div class="collapsible-content">
+            <p>FAQs, Customer Support, Feedback</p>
+        </div>
+        <button class="collapsible">Domains</button>
+        <div class="collapsible-content">
+            <p>Domain Checker, Domain Transfer, Free Domain</p>
+        </div>
+    </div>
+    
+    <script>
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach(item =>
+            item.addEventListener("click", function () {
+                this.classList.toggle("collapsible--expanded");
+                const content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            })
+        );
+    </script>
+    
+</body>
+</html>
